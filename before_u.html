@@ -13,7 +13,7 @@
 	<link href="styles/before-form.css" rel="stylesheet">
 	<link href="styles/before-modal.css" rel="stylesheet">
 	<link href="styles/before-hero.css" rel="stylesheet">
-  <!-- <script src="scripts/bootstrap.bundle.min.js"></script> -->
+  <script src="scripts/bootstrap.bundle.min.js"></script> -->
 	<script src="scripts/before-menu.js"></script>
 	<script src="scripts/before-form.js"></script>
 	<script src="scripts/before-modal.js"></script>
@@ -34,9 +34,10 @@
       </a>
     </div>
 
-    <div class="navbar navbar-expand-lg navbar-dark bg-dark bg-primary md-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-primary md-3">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -46,8 +47,8 @@
               <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#"
-                  data-toggle="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   About
               </a>
               <ul class="dropdown-menu">
@@ -58,8 +59,8 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#"
-                  data-toggle="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Academics
               </a>
               <ul class="dropdown-menu">
@@ -70,8 +71,8 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#"
-                  data-toggle="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Admissions
               </a>
               <ul class="dropdown-menu">
@@ -88,12 +89,13 @@
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
+            <label for="search-input" class="sr-only">Search</label>
             <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search">
-            <button class="btn btn-success my-2 my-sm-0" type="submit">Go</button>
+            <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
       </div>
-    </div>
+    </nav>
 
     <br/>
     <div class="container">
